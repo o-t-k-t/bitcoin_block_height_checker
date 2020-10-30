@@ -1,0 +1,10 @@
+bitcoin-core:
+  image: ruimarinho/bitcoin-core:0.20.1
+  command:
+    -printtoconsole
+    -regtest=1
+    -rpcallowip=10.211.0.0/16
+    -rpcallowip=172.17.0.0/16
+    -rpcallowip=192.168.0.0/16
+  ports:
+    - 8332:8332
